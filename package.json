@@ -1,7 +1,16 @@
 {
-  "name": "setapp",
-  "version": "0.1.0",
+  "name": "@setapp.io/setapp",
+  "version": "1.0.0",
   "description": "React native library for setapp application",
+  "keywords": [
+    "setapp",
+    "setapp-sdk",
+    "sdk",
+    "react-native",
+    "settings",
+    "offline",
+    "preference"
+  ],
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -31,18 +40,13 @@
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods"
   },
-  "keywords": [
-    "react-native",
-    "ios",
-    "android"
-  ],
-  "repository": "https://github.com/setapp-io/react-native-setapp",
+  "repository": "https://github.com/setapp-io/setapp-react-native",
   "author": "Hakob Kanoyan <hakob91@gmail.com> (https://github.com/hakob91)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/setapp-io/react-native-setapp/issues"
+    "url": "https://github.com/setapp-io/setapp-react-native/issues"
   },
-  "homepage": "https://github.com/setapp-io/react-native-setapp#readme",
+  "homepage": "https://github.com/setapp-io/setapp-react-native#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

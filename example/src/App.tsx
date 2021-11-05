@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'setapp';
+import { getStringOrNull } from 'setapp';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<string | null>(null);
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    getStringOrNull('hello-world').then(setResult).catch(setResult);
   }, []);
 
   return (

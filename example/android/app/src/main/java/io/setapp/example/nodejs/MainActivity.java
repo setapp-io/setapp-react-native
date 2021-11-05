@@ -1,4 +1,4 @@
-package com.example.setapp;
+package io.setapp.example.nodejs;
 
 import com.facebook.react.ReactActivity;
 

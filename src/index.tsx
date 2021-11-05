@@ -6,8 +6,8 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo managed workflow\n';
 
-const Setapp = NativeModules.Setapp
-  ? NativeModules.Setapp
+const setapp = NativeModules.setapp
+  ? NativeModules.setapp
   : new Proxy(
       {},
       {
@@ -17,6 +17,27 @@ const Setapp = NativeModules.Setapp
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return Setapp.multiply(a, b);
+export function getInt(key: string, def: number): Promise<number> {
+  return setapp.getInt(key, def);
+}
+
+export function getLong(key: string, def: number): Promise<number> {
+  return setapp.getLong(key, def);
+}
+
+export function getFloat(key: string, def: number): Promise<number> {
+  return setapp.getFloat(key, def);
+}
+
+export function getString(key: string, def: string): Promise<string> {
+  return setapp.getString(key, def);
+}
+
+export function getStringOrNull(key: string): Promise<string | null> {
+  console.log(setapp);
+  return setapp.getStringOrNull(key);
+}
+
+export function getBoolean(key: string, def: boolean): Promise<boolean> {
+  return setapp.getBoolean(key, def);
 }

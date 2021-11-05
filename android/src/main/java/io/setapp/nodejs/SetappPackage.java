@@ -1,4 +1,4 @@
-package com.setapp;
+package io.setapp.nodejs;
 
 import androidx.annotation.NonNull;
 
