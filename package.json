@@ -42,7 +42,7 @@
   },
   "repository": "https://github.com/setapp-io/setapp-react-native",
   "author": "Hakob Kanoyan <hakob91@gmail.com> (https://github.com/hakob91)",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/setapp-io/setapp-react-native/issues"
   },
