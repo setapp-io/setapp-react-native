@@ -33,11 +33,26 @@ export function getString(key: string, def: string): Promise<string> {
   return setapp.getString(key, def);
 }
 
+export function getBoolean(key: string, def: boolean): Promise<boolean> {
+  return setapp.getBoolean(key, def);
+}
+
+export function getIntOrNull(key: string): Promise<number | null> {
+  return setapp.getIntOrNull(key);
+}
+
+export function getLongOrNull(key: string): Promise<number | null> {
+  return setapp.getLongOrNull(key);
+}
+
+export function getFloatOrNull(key: string): Promise<number | null> {
+  return setapp.getFloatOrNull(key);
+}
+
 export function getStringOrNull(key: string): Promise<string | null> {
-  console.log(setapp);
   return setapp.getStringOrNull(key);
 }
 
-export function getBoolean(key: string, def: boolean): Promise<boolean> {
-  return setapp.getBoolean(key, def);
+export function getBooleanOrNull(key: string): Promise<boolean | null> {
+  return setapp.getBooleanOrNull(key);
 }
